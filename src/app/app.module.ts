@@ -12,11 +12,21 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import {MatCommonModule} from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TransporterOwnerComponent } from './modules/dashboard/transporter-owner/transporter-owner.component';
+import { DriverComponent } from './modules/dashboard/driver/driver.component';
+import { CleanerComponent } from './modules/dashboard/cleaner/cleaner.component';
+import { NavComponent } from './shared/nav/nav.component';
+import { AppLayoutComponent } from './modules/app-layout/app-layout.component';
+import { AppLayoutModule } from './modules/app-layout/app-layout.module';
+import { MyAccountComponent } from './shared/my-account/my-account.component';
+import { RegistrationComponent } from './modules/registration/registration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    MyAccountComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +36,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatInputModule,
     MatSelectModule,
     MatButtonModule,
-    MatCommonModule
+    MatCommonModule,
+    AppLayoutModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(),
