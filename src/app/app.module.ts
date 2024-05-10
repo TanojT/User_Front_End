@@ -20,7 +20,8 @@ import { AppLayoutComponent } from './modules/app-layout/app-layout.component';
 import { AppLayoutModule } from './modules/app-layout/app-layout.module';
 import { MyAccountComponent } from './shared/my-account/my-account.component';
 import { RegistrationComponent } from './modules/registration/registration.component';
-
+import { MatDividerModule } from '@angular/material/divider';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,9 @@ import { RegistrationComponent } from './modules/registration/registration.compo
     MatButtonModule,
     MatCommonModule,
     AppLayoutModule,
-    FormsModule
+    FormsModule,
+    MatDividerModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration(),

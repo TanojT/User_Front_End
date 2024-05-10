@@ -1,1 +1,98 @@
-<p>registration works!</p>
+<div class="container-fluid">
+    <form #registrationForm="ngForm" (ngSubmit)="onRegister(registrationForm)" novalidate>
+        <div class="row text-center">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <mat-form-field>
+                            <mat-label>First Name</mat-label>
+                            <input matInput name="firstName" ngModel required #firstName="ngModel">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <mat-form-field>
+                            <mat-label>Last Name</mat-label>
+                            <input matInput name="lastName" ngModel required #lastName="ngModel">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <mat-form-field>
+                            <mat-label>Email</mat-label>
+                            <input matInput name="email" ngModel required #email="ngModel">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <mat-form-field>
+                            <mat-label>User Type</mat-label>
+                            <select matNativeControl required name="userType" ngModel required #userType="ngModel">
+                                <option value="MILL_OWNER">Mill Owner</option>
+                                <option value="MILL_CLERK">Mill Clerk</option>
+                                <option value="COMPANY_AGENT">Company Agent</option>
+                                <option value="COMPAN_GATEKEEPER">Compay Gatekeeper</option>
+                                <option value="COMPANY_FINANCING_TEAM">Company Financing Team</option>
+                                <option value="TRANSPORTER_OWNER">Transporter Owner</option>
+                                <option value="DOZER_DRIVER">Dozer Driver</option>
+                                <option value="DOZER_CLEANER">Dozer Cleaner</option>
+                                <option value="TRUCK_DRIVER">Truck Driver</option>
+                                <option value="TRUCK_CLEANER">Truck Cleaner</option>
+                            </select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <mat-form-field>
+                            <mat-label>Mobile #</mat-label>
+                            <input matInput name="mobile" ngModel required #mobile="ngModel">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="row">
+                    <div class="col-12">
+                        <mat-form-field>
+                            <mat-label>Username</mat-label>
+                            <input matInput name="email" ngModel required #email="ngModel">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <mat-form-field>
+                            <mat-label>Password</mat-label>
+                            <input matInput name="password" ngModel required #password="ngModel">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <mat-form-field>
+                            <mat-label>Re-enter Password</mat-label>
+                            <input matInput name="reEnterPassword" ngModel required #reEnterPassword="ngModel">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="row">
+                    <div class="col-12">
+                        <mat-form-field>
+                            <mat-label>Address 1</mat-label>
+                            <input matInput name="email" ngModel required #email="ngModel">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button mat-flat-button color="primary" type="submit" matButton>Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
