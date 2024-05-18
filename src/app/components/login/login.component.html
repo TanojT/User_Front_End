@@ -1,0 +1,27 @@
+<div class="login-component" *ngIf="!userDetailsScreen.loginScreen">
+<mat-card class="mat-elevation-z3" >
+  <div class="login-form-header">
+    <h3>LOGIN</h3>
+    <div class="mat-ink-bar"></div>
+  </div>
+  <div class="login-form">
+    <mat-form-field>
+      <input matInput placeholder="username" [(ngModel)]="authenticationRequest.username" >
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="password" placeholder="password" [(ngModel)]="authenticationRequest.password">
+    </mat-form-field>
+    <div class="validation-msg-color" *ngIf="!enableLoginButton()">
+      <span class="dot"></span>
+      <small>Enter the login details.</small>
+    </div>
+    <button mat-raised-button color="primary" *ngIf="enableLoginButton()" (click)="checkLogin()">Log In</button>
+    <button mat-raised-button color="warn" (click)="showCreateUser()">Sign In</button>
+  </div>
+</mat-card>
+</div>
+<app-user-details
+  *ngIf="userDetailsScreen.loginScreen"
+  [userDetailsScreen]="userDetailsScreen">
+</app-user-details>
+

@@ -1,0 +1,7 @@
+<div class="snackbar-component">
+  {{snackBarData.message}}
+  <button *ngIf="snackBarData.showOkButton"
+      mat-stroked-button color="primary"
+      (click)="onOkClick()">Ok</button>
+</div>
+

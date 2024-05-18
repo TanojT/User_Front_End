@@ -1,0 +1,49 @@
+@import '../nt-theme.scss';
+
+.navbar-top-fixed{
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // z-index: 2;
+  // background-color: $nt-primary;
+  // color: $nt-background-white;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+}
+
+.navbar-bottom-fixed{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 1);
+}
+
+.home-router-content{
+  // position: fixed;
+  // top: 65px;
+  // bottom: 55px;
+  // left: 10px;
+  // right: 10px;
+  position: fixed;
+  width: 100%;
+  margin-top: 40px;
+  height: 100%;
+}
+
+.mat-toolbar-multiple-rows {
+  min-height: 40px;
+}
+
+
+
+
+
+
+

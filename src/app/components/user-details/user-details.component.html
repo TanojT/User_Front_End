@@ -1,0 +1,19 @@
+<mat-card class="component-header-custom">
+<button mat-button color="primary">
+  <mat-icon>chevron_right</mat-icon>
+  <span>User Details</span>
+</button>
+  <button mat-icon-button color="primary" *ngIf="userDetailsScreen.listUserDetails">
+    <mat-icon>add</mat-icon>
+  </button>
+  <button mat-icon-button color="primary" *ngIf="userDetailsScreen.showUserDetails">
+    <mat-icon>edit</mat-icon>
+  </button>
+</mat-card>
+
+<app-show-user-details *ngIf="userDetailsScreen.showUserDetails" ></app-show-user-details>
+
+<app-list-user-details *ngIf="userDetailsScreen.listUserDetails" ></app-list-user-details>
+
+<app-create-or-edit-user-details *ngIf="userDetailsScreen.createOrEdit" [(userDetailsScreen)]="userDetailsScreen"></app-create-or-edit-user-details>
+

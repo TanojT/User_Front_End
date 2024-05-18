@@ -1,0 +1,10 @@
+.component-header-custom{
+  padding: 0px 10px 0px 0px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  button mat-icon {
+    margin-bottom: 2px;
+  }
+}

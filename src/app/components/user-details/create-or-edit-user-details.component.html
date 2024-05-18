@@ -1,0 +1,68 @@
+<mat-card class="user-form">
+
+  <div>
+  <mat-form-field class="user-form-field">
+    <mat-label>Member Type</mat-label>
+    <mat-select [(value)]="user.userType">
+      <mat-option value="MEMBER">Member</mat-option>
+      <mat-option value="OWNER">Owner</mat-option>
+      <mat-option value="DRIVER">Driver</mat-option>
+      <mat-option value="LABOUR">Labour</mat-option>
+      <mat-option value="CLEANER">Cleaner</mat-option>
+      <mat-option value="RICEMILL">Ricemill</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="user-form-field" *ngIf="user.userType == 'RICEMILL'">
+    <mat-label>Ricemill Name</mat-label>
+    <input matInput [(ngModel)]="user.riceMillName">
+  </mat-form-field>
+</div>
+
+
+
+  <mat-form-field class="user-form-field">
+    <mat-label>First Name</mat-label>
+    <input matInput [(ngModel)]="user.firstName">
+  </mat-form-field>
+
+  <mat-form-field class="user-form-field">
+    <mat-label>Last Name</mat-label>
+    <input matInput [(ngModel)]="user.lastName">
+  </mat-form-field>
+
+  <mat-form-field class="user-form-field">
+    <mat-label>Username</mat-label>
+    <input matInput [(ngModel)]="user.username">
+  </mat-form-field>
+
+  <mat-form-field class="user-form-field">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" [(ngModel)]="user.password">
+  </mat-form-field>
+
+  <mat-form-field class="user-form-field">
+    <mat-label>Expire On</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="user.expireOn">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <div class="action-buttons" *ngIf="!userDetailsScreen.loginScreen">
+    <button mat-raised-button color="primary">
+      Save & Goto User List
+    </button>
+    <button mat-raised-button color="primary">
+      Cancel & Goto User List
+    </button>
+  </div>
+
+  <div class="action-buttons" *ngIf="userDetailsScreen.loginScreen">
+    <button mat-raised-button color="primary" (click)="submitAndGotoLogin()">
+      Submit & Goto Login
+    </button>
+    <button mat-raised-button color="primary" (click)="cancelAndGotoLogin()">
+      Cancel & Goto Login
+    </button>
+  </div>
+</mat-card>

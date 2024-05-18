@@ -1,0 +1,45 @@
+@import '../../../nt-theme.scss';
+
+.mat-card-custom
+{
+  width: 25%;
+  button {
+  display: inline;
+  float: right;
+  margin-right: 20px;
+  }
+}
+
+.custom-h6-css{
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  display: block;
+}
+
+.details-card-info{
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px !important;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  min-width: 210px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.user-card-header{
+  // color: $nt-primary;
+  // border-left: 3px solid $nt-primary;
+  padding-left: 7px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  h6{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0px;
+  }
+}

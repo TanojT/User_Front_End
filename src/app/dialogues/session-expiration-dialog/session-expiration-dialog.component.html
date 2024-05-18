@@ -1,0 +1,8 @@
+<div class="dialogue-container">
+  <h1 mat-dialog-title>{{userDisplayName}}</h1>
+    <h4>Your session is about to expire...</h4>
+      <span class="session-buttons">
+        <button mat-button (click)="logout()">Logout</button> &nbsp;
+        <button mat-button (click)="continue()">Continue ({{refreshTokenExpiresIn}})</button>
+      </span>
+  </div>

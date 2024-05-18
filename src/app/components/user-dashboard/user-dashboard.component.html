@@ -1,0 +1,6 @@
+<!-- <h6>
+  Hello...<strong>{{appContext.authenticationDetails.firstName}} {{appContext.authenticationDetails.lastName}}</strong> !!!!
+</h6> -->
+<app-show-user-details *ngIf="appContext.authenticationDetails != null"
+                        [userDetails]="appContext.authenticationDetails">
+</app-show-user-details>

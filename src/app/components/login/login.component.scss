@@ -1,0 +1,59 @@
+@import '../../../nt-theme.scss';
+
+.login-card-div {
+  display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* margin: 0 auto; */
+    top: 30%;
+    position: sticky;
+}
+
+.login-component{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.login-form {
+  display: grid;
+  width: 250px;
+  height: 250px;
+
+  button{
+    margin-bottom: 5px;
+    height: 40px;
+  }
+}
+
+.login-form-header{
+  // color: $nt-black;
+  margin-bottom: 10px;
+  width: max-content;
+  h3 {
+    margin-bottom: 4px;
+    font-size: 1rem;
+  }
+}
+
+.mat-ink-bar {
+  height: 3px;
+  // background-color: $nt-primary;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  // background-color: $nt-errmsg;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.validation-msg-color {
+  // color: $nt-errmsg;
+  margin-bottom: 5px;
+  height: 40px;
+}

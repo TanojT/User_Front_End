@@ -1,0 +1,24 @@
+@import '../../../nt-theme.scss';
+
+.login-menu-custom{
+  display: grid;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  button{
+    margin-bottom: 5px;
+  }
+}
+.menu-button-custom{
+  width: 100px;
+  mat-icon {
+    font-size: 20px !important;
+  }
+}
+
+.menu-item-custom {
+  display: block !important;
+  width: 100%;
+}
+
+
