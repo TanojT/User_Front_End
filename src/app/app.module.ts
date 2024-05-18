@@ -22,12 +22,16 @@ import { MyAccountComponent } from './shared/my-account/my-account.component';
 import { RegistrationComponent } from './modules/registration/registration.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { HttpClientModule } from '@angular/common/http';
+import { MillComponent } from './modules/mill/mill.component';
+import { CompanyComponent } from './modules/company/company.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MyAccountComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    MillComponent,
+    CompanyComponent
   ],
   imports: [
     BrowserModule,
